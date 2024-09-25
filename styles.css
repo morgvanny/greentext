@@ -1,0 +1,29 @@
+.greentext {
+  color: #789922 !important;
+}
+
+[data-testid="tweetText"].has-greentext {
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: 8px !important;
+  border-radius: 4px !important;
+}
+
+/* Blue style */
+:root.blue-style [data-testid="tweetText"].has-greentext {
+  background: linear-gradient(to bottom, #d8dbe8, #e0e3ee) !important;
+}
+
+:root.blue-style
+  [data-testid="tweetText"].has-greentext
+  > span:not(.greentext) {
+  color: #000000 !important;
+}
+
+/* Red style */
+:root.red-style [data-testid="tweetText"].has-greentext {
+  background: linear-gradient(to bottom, #fef3e8, #fef6ee) !important;
+}
+
+:root.red-style [data-testid="tweetText"].has-greentext > span:not(.greentext) {
+  color: #800000 !important;
+}
